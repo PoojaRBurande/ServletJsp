@@ -19,6 +19,8 @@ public class Result extends HttpServlet {
 		System.out.println(result);
 		response.setContentType("text/html");
 		    PrintWriter out = response.getWriter();
+		    
+		    
 		    out.println("<html>");
 		    out.println("<head>");
 		    out.println("<title>Hola</title>");
