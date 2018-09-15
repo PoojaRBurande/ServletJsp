@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>FirstProject</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>Add</servlet-name>
+    <servlet-class>action.Add</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Add</servlet-name>
+    <url-pattern>/Add</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Result</servlet-name>
+    <servlet-class>action.Result</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Result</servlet-name>
+    <url-pattern>/Result</url-pattern>
+  </servlet-mapping>
+</web-app>
