@@ -15,12 +15,10 @@ public class Result extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		System.out.println("inside Result");
-		String result = (String) request.getAttribute("k");
+		int result = (int) request.getAttribute("k");
 		System.out.println(result);
 		response.setContentType("text/html");
-		    PrintWriter out = response.getWriter();
-		    
-		    
+		    PrintWriter out = response.getWriter();  
 		    out.println("<html>");
 		    out.println("<head>");
 		    out.println("<title>Hola</title>");
